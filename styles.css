@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(231, 35%, 8%);
+    color: white;
+    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(36, 24, 38);
+}
+ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 20px 84px;
+}
+nav ul li a:hover {
+    color: rgb(82, 253, 73);
+    font-size: 1.2rem;
+}
+.left {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: 'Bona Nova SC', serif;
+}
+.firstsec {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+}
+.firstsec > div {
+    width: 30%;
+}
+.leftsec {
+    font-size: 1.75rem;
+    margin-top: 3%;
+}
+.rightsec img {
+    width: 80%;
+    margin: 50px 0;
+}
+.namespan {
+    color: rgb(195, 52, 195);
+}
+#element {
+    color: rgb(195, 52, 195);
+}
+.secondsec {
+    max-width: 80vw;
+    margin: auto;
+}
+h1 {
+    font-size: 1.5rem;
+    color: rgb(195, 52, 195);
+}
+.thirdsec {
+    max-width: 80vw;
+    margin: auto;
+}
+h3 {
+    color: mediumspringgreen;
+}
+#p {
+    color: dimgray;
+    font-size: 1.2rem;
+}
+.btn {
+    background-color: rgb(42, 29, 60);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.leftsec .buttons {
+    padding: 25px 0px;
+}
+
+.contactsec {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-info div {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.contact-info img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contact-info  {
+    margin-top: 20px;
+}
+.last ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.last ul li{
+    display: inline;
+    margin-right: 15px;
+}
+.last ul li a{
+    text-decoration: none;
+    color:aqua
+}
+.footer {
+    text-align: center;
+    padding: 12px 0;
+    background-color: rgb(36, 24, 38); 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #f5faf8; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .firstsec {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstsec > div {
+        width: 80%;
+        text-align: center;
+    }
+    .rightsec img {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .secondsec, .thirdsec {
+        max-width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .left {
+        font-size: 1.2rem;
+    }
+    .leftsec {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
