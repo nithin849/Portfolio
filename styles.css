@@ -7,6 +7,9 @@ body {
     color: white;
     font-family: 'Edu AU VIC WA NT Hand', sans-serif;
 }
+main{
+    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -25,6 +28,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color:green;
 }
 main hr {
     border: 0;
@@ -38,8 +45,7 @@ nav ul li a:hover {
 }
 .left {
     font-size: 1.5rem;
-    font-style: italic;
-    font-family: 'Bona Nova SC', serif;
+    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
 }
 .firstsec {
     display: flex;
@@ -213,6 +219,22 @@ nav .right ul li a {
 
     .menu-toggle {
         display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 10px; /* Adjust position as needed */
+        right: 20px; /* Adjust position as needed */
+    }
+
+    .menu-toggle .bar {
+        width: 20px; /* Adjust bar width for smaller toggle */
+        height: 2px; /* Adjust bar height for smaller toggle */
+        background-color: #fff;
+        margin: 2px 0;
     }
 }
 
