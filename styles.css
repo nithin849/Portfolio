@@ -284,3 +284,11 @@ nav .right ul li a {
         padding: 10px;
     }
 }
+a {
+    color: violet;
+    text-decoration: none; /* Optional: removes the underline from the link */
+}
+
+a:hover {
+    color: darkviolet; /* Optional: changes the color on hover */
+}
