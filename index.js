@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   resumeButton.addEventListener('click', function() {
       // Create a link element
       var link = document.createElement('a');
-      link.href = 'Nani.pdf'; 
+      link.href = 'Nani (2).pdf'; 
       link.download = 'Nithin.pdf';  //name of file to be downloaded
       document.body.appendChild(link); // Append the link to the body
       link.click(); // Trigger the download
@@ -26,4 +26,3 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
   const navLinks = document.getElementById('nav-links');
   navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
-
