@@ -1,138 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nithin's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
-
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Mangali | CS Undergrad & Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header>
         <nav>
-            <div class="left">NITHIN'S PORTFOLIO</div>
+            <div class="left">NITHIN MANGALI</div>
             <div class="right">
                 <ul id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
         </nav>
     </header>
+    
     <main>
         <section id="home" class="firstsec">
             <div class="leftsec">
-                Hello, My Name is
-                <span class="namespan"> Nithin </span>
-                <div>and I am a CSE undergraduate and </div>
+                Hello, I'm
+                <span class="namespan">Nithin Mangali</span>
+                <div>Computer Science Undergraduate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button id="resumeButton" class="btn"><img src="resume.png" alt="resume png" height="30px" width="30px"></button>
-                    <button id="githubButton" class="btn"><img src="github.png" alt="github png" height="30px" width="30px"></button>
+                    <button id="resumeButton" class="btn">
+                        <i class="fas fa-file-alt"></i> Resume
+                    </button>
+                    <a href="https://github.com/nithin849" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
             <div class="rightsec">
-                <img src="nani.png">
+                <img src="portfolio_nani.jpg" alt="Nithin Mangali" id="portfolio-image">
             </div>
         </section>
-        <hr>
+
         <section id="about" class="secondsec">
-            <span class="secondspan"></span>
             <h1>About Me</h1>
-            <br>
-            <p>Hi, my name is Nithin. I am currently in my fourth year of B.Tech in the CSD department at B V Raju Institute of Technology.</p>
-            <p>Regarding my hobbies, I enjoy watching movies and playing cricket in my free time.</p>
-            <p>My short-term goal is to secure a job, while my long-term goal is to master a programming language.</p>
-            <p>The languages I have learned so far are Java, Python, and frontend development.</p>
-            <p>The next technology I want to learn is DevOps.</p>
+            <p>I'm a passionate Computer Science undergraduate at B V Raju Institute of Technology with expertise in Java, Python, and frontend development. My academic journey has equipped me with strong problem-solving skills and a solid foundation in software development.</p>
+            <p>Beyond coding, I'm an avid cricket enthusiast and movie buff. These hobbies help me maintain a balanced perspective and creative approach to problem-solving.</p>
+            <p>Currently expanding my skillset into DevOps, I'm committed to continuous learning and staying at the forefront of technology trends.</p>
         </section>
-        <hr>
         <section id="project" class="thirdsec">
-            <h1>Projects</h1><br>
-            <div>
-                <h3><a href="https://github.com/nithin849/Electricity_bill_project">1. Electricity Bill Management System</a></h3>
-                <p>This project is a Java-based desktop application that manages electricity billing and shift systems. 
-                   It allows users to generate bills, manage customer data, and schedule shifts for maintenance personnel. 
-                   The application uses Java Swing for the GUI and MySQL for data storage.</p>
-                <br>
-                <p><span id="p">Technologies Used:</span><br>
-                    Programming Language: Java<br>
-                    GUI: Java Swing<br>
-                    Database: MySQL
-                </p>
-                <br>
-
-                <h3><a href="https://github.com/nithin849/Hate_Speech_Detection">2. Hate Speech Detection </a></h3>
-                <p>Hate speech detection is a challenging problem in natural language processing (NLP) that involves 
-                    classifying text as containing hate speech or not. Hate speech can be defined as any communication 
-                    that belittles, demeans, or discriminates against individuals or groups based on attributes like race,
-                    religion, ethnicity, gender, sexual orientation</p>
-                <br>
-                <p><span id="p">Technologies Used:</span><br>
-                    programming language : python
-                    NLP
-                    <br>
-                </p>
-                <br>
-                <h3><a href="https://github.com/nithin849/NumberGame">3. Number Game </a></h3>
-                <p>This project is a simple implementation suitable for beginners learning Java programming</p>
-                <br>
-                <p><span id="p">Technologies Used:</span><br>
-                    programming language : Java
-                    <br>
-                </p>
-                <br>
-
+            <h1>My Projects</h1>
+            <div class="project-card">
+                <h3><a href="https://github.com/nithin849/Electricity_bill_project">Electricity Bill Management System</a></h3>
+                <p>A comprehensive Java application featuring GUI development with Swing and MySQL database integration. The system streamlines billing processes and shift management for utility providers.</p>
+                <p><span class="tech-label">Technologies:</span> Java, Swing, MySQL</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/nithin849/Hate_Speech_Detection">Hate Speech Detection</a></h3>
+                <p>An NLP solution that classifies text content to identify harmful language patterns. This project demonstrates my skills in Python and natural language processing techniques.</p>
+                <p><span class="tech-label">Technologies:</span> Python, NLP</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/nithin849/NumberGame">Number Game</a></h3>
+                <p>A beginner-friendly Java application that showcases fundamental programming concepts through an interactive number guessing game.</p>
+                <p><span class="tech-label">Technologies:</span> Java</p>
             </div>
         </section>
-        <hr>
+
         <section id="contact" class="contactsec">
-            <div class="contact-container">
-                <h1>Get in Touch</h1>
-                <div class="contact-info">
-                    <div>
-                        <img src="email.png" alt="email photo" height="20px" width="20px">
-                        <a href="mailto:mnithinmangali@gmail.com">mnithinmangali@gmail.com</a>
-                    </div>
-                    <div>
-                        <img src="linkedin.png" alt="linkedin" height="20px" width="20px">
-                        <a href="https://www.linkedin.com/in/nithin-mangali-50ba0924b/" target="_blank">LinkedIn Profile</a>
-                    </div>
-                    <div>
-                        <img src="insta.webp" alt="Instagram" height="20px" width="20px">
-                        <a href="https://www.instagram.com/nithin_849/?hl=en" target="_blank">Instagram</a>
-                    </div>
+            <h1>Get In Touch</h1>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mnithinmangali@gmail.com">mnithinmangali@gmail.com</a>
+                </div>
+                <div>
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/nithin-mangali-50ba0924b/" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/nithin849" target="_blank">GitHub Profile</a>
                 </div>
             </div>
         </section>
-        <hr>
-        <div class="last">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
-            </ul>
-        </div>
-        <footer class="footer">
-            <p>&copy; 2024 Nithin</p>
-        </footer>
     </main>
-    <!-- Load Typed.js Library -->
+
+    <footer class="footer">
+        <p>&copy; 2025 Nithin Mangali. All rights reserved.</p>
+    </footer>
+
+    <!-- Typed.js for animated text -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Link to external JavaScript file -->
     <script src="index.js"></script>
 </body>
 </html>
-
-
-
