@@ -3,7 +3,7 @@
 ### **Portfolio Website**  
 #### **A Showcase of My Skills, Projects, and Professional Journey**  
 
-🚀 **Overview**:  
+🚀 **Overview**
 I designed and developed a dynamic, responsive portfolio website from scratch using **HTML, CSS, and JavaScript**. This project serves as a centralized platform to highlight my technical expertise, showcase my projects, and share my professional journey with clarity and creativity.  
 
 ---
