@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/charts.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +18,9 @@
                 <ul id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#project">Projects</a></li>
+                    <li><a href="#certifications-hobbies">More</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="theme-toggle">
@@ -52,13 +56,143 @@
                 <img src="portfolio_nani.jpg" alt="Nithin Mangali" id="portfolio-image">
             </div>
         </section>
-
         <section id="about" class="secondsec">
             <h1>About Me</h1>
-            <p>I'm a passionate Computer Science undergraduate at B V Raju Institute of Technology with expertise in Java, Python, and frontend development. My academic journey has equipped me with strong problem-solving skills and a solid foundation in software development.</p>
+            <p>I'm a passionate Computer Science undergraduate at B V Raju Institute of Technology with expertise in Java, Python, and frontend development. My academic journey has equipped me with strong problem-solving skills, demonstrated by solving 310+ problems on LeetCode.</p>
             <p>Beyond coding, I'm an avid cricket enthusiast and movie buff. These hobbies help me maintain a balanced perspective and creative approach to problem-solving.</p>
             <p>Currently expanding my skillset into DevOps, I'm committed to continuous learning and staying at the forefront of technology trends.</p>
         </section>
+        <!-- Add this after your About section -->
+<section id="skills" class="skills-section">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-item">
+                    <div class="skill-name">Java</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Web Development -->
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-item">
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">React.js</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Database -->
+            <div class="skill-category">
+                <h3>Database</h3>
+                <div class="skill-item">
+                    <div class="skill-name">MySQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add this after Skills section -->
+<section id="certifications-hobbies" class="extras-section">
+    <div class="extras-container">
+        <!-- Certifications -->
+        <div class="extras-card">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <ul>
+                <li>Java Programming - Oracle University (2023)</li>
+                <li>Web Development Bootcamp - Udemy (2023)</li>
+                <li>Python for Data Science - Coursera (2022)</li>
+            </ul>
+        </div>
+        
+        <!-- Hobbies -->
+        <div class="extras-card">
+            <h2><i class="fas fa-heart"></i> Hobbies</h2>
+            <ul>
+                <li>Cricket Enthusiast</li>
+                <li>Movie Buff</li>
+                <li>Problem Solving (LeetCode)</li>
+                <li>Tech Blogging</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add this after Skills section -->
+<section id="coding-stats" class="coding-stats-section">
+    <div class="stats-container">
+        <!-- GitHub Language Wheel -->
+        <div class="stat-card">
+            <h2>My Code Language Distribution</h2>
+            <div class="chart-container">
+                <canvas id="githubLanguageChart"></canvas>
+                <div class="chart-center">
+                    <!-- <img src="portfolio_nani.jpg" alt="Your Avatar" class="avatar"> -->
+                    <div class="total-repos">15+ Repos</div>
+                </div>
+            </div>
+            <div class="language-legend"></div>
+        </div>
+
+        <!-- LeetCode Efficiency -->
+        <div class="stat-card">
+            <h2>My LeetCode Performance</h2>
+            <div class="chart-container">
+                <canvas id="leetcodeChart"></canvas>
+            </div>
+            <div class="stats-grid">
+                <div class="mini-stat">
+                    <div class="stat-value">310+</div>
+                    <div class="stat-label">Problems Solved</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="stat-value">98%</div>
+                    <div class="stat-label">Easy Beats</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="stat-value">85%</div>
+                    <div class="stat-label">Medium Beats</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Hard Solved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
         <section id="project" class="thirdsec">
             <h1>My Projects</h1>
             <div class="project-card">
@@ -93,6 +227,14 @@
                     <i class="fab fa-github"></i>
                     <a href="https://github.com/nithin849" target="_blank">GitHub Profile</a>
                 </div>
+                <div>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/nithin_849/" target="_blank">Instagram Profile</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <a href="https://leetcode.com/u/nithin_849/" target="_blank">LeetCode Profile (310+ Problems Solved)</a>
+                </div>
             </div>
         </section>
     </main>
@@ -104,5 +246,6 @@
     <!-- Typed.js for animated text -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="index.js"></script>
+    <script src="js/charts.js"></script>
 </body>
 </html>
