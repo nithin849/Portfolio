@@ -51,7 +51,6 @@ I designed and developed a dynamic, responsive portfolio website from scratch us
 - **Custom Animations**: Enhanced UX with subtle transitions and hover effects.  
 - **Professional Branding**: Reflects my personality as a developer while maintaining a polished, corporate-ready aesthetic.  
 
-🔗 **Live Demo**: [Portfolio Link](#) | **GitHub Repo**: [View Code](#)  
 
 ---
 
@@ -62,4 +61,3 @@ I designed and developed a dynamic, responsive portfolio website from scratch us
 
 ---
 
-This version keeps it concise yet impactful, emphasizing your technical prowess and attention to detail. Let me know if you'd like any refinements! 🚀
