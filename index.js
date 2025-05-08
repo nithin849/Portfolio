@@ -18,17 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const resumeButton = document.getElementById('resumeButton');
     if (resumeButton) {
         resumeButton.addEventListener('click', function() {
-            try {
-                const link = document.createElement('a');
-                link.href = 'info.docx.pdf';
-                link.target = '_blank';
-                link.rel = 'noopener noreferrer';
-                link.click();
-            } catch (error) {
-                console.error('Download error:', error);
-                alert('Error downloading resume. Please try again.');
-            }
-        });
+        try {
+            const link = document.createElement('a');
+            link.href = 'https://drive.google.com/file/d/1eMc0q1AirzgBvRS4hIEDCb9A3HlkJy2N/view?usp=drive_link';
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.click();
+        } catch (error) {
+            console.error('Download error:', error);
+            alert('Error downloading resume. Please try again.');
+        }
+    });
     }
 
     // Mobile menu toggle
