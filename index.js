@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resumeButton.addEventListener('click', function() {
             try {
                 const link = document.createElement('a');
-                link.href = 'Info.docx.pdf';
+                link.href = 'info.docx.pdf';
                 link.target = '_blank';
                 link.rel = 'noopener noreferrer';
                 link.click();
